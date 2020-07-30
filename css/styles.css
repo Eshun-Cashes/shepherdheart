@@ -11,6 +11,11 @@ body {
     padding: 0;
 }
 
+.home-page{
+    height: 100%;
+    width: 100%;
+}
+
 #blog{
     background-color: yellowgreen;
 }
@@ -23,7 +28,7 @@ body{
    background-color: #070707;
     color: #e5e5e5;
     font: 14px/1.25 'Raleway', sans-serif;
-
+    height: 100vh;
 }
 
 h2, 
@@ -40,16 +45,16 @@ h1{
 }
 
 .dp{
-    margin-top: 25px;
+    margin-top: 10px;
     border-radius: 100%;
-    width: 15em;
-    height: 15em;
+    width: 400px;
+    height: 400px;
 }
 
 .note{
-    width: 45%;
+    width: 50%;
     margin: auto;
-    margin-top: 2em;
+    margin: 30px auto;
     line-height: 2;
     border: 1px solid wheat;
     padding: 4px;
@@ -60,21 +65,24 @@ span{
 }
 
 .container{
-    margin: 0 auto;
-    max-width: 80em;
+    margin: 10px auto 0;
+    max-width: 1280px;
 }
 
-main .container{ padding: 1em;}
+main .container{ 
+    padding: 16px;
+}
 
 
 
 .contact{
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
-    height: 2em;
+    height: 64ox;
     overflow: hidden;
   /*position: absolute !important;*/
-   width: 2em;
+   width: 64px;
+   margin-top: 40px;
 }
 
 
@@ -100,9 +108,13 @@ nav input{
 nav label{
     cursor: pointer;
     display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
+    font: 32px/1 'Oswald', sans-serif;
+    padding: 8px;
 }
+/*
+em{
+    margin-top: 48px;
+}*/
 
 /*------Hamburger Icon------*/
 
@@ -110,16 +122,16 @@ nav label{
 #menu-icon:before,
 #menu-icon:after{
     background: #1d1f20;
-    border-radius: 0.05em;
-    height: 0.2em;
+    border-radius: 8px;
+    height: 4px;
     transition: all 0.2s ease-in-out;
     width: 100%;
 }
 
 #menu-icon{
     display: inline-block;
-    margin: 0.4em 0;
-    max-width: 1em;
+    margin:20px 0;
+    max-width: 32px;
     position: relative;
 }
 
@@ -135,11 +147,17 @@ nav label #menu-icon{
 }
 
 #menu-icon:before{
-    top: -0.3em;
+    top: -6.8px;
 }
 
 #menu-icon:after{
-    bottom: -0.3em;
+    bottom: -6.8px;
+}
+
+/**--------Home-----*/
+
+#home{
+    border: 2px solid lightgreen;
 }
 
 /*-------- Close Icon-----*/
@@ -164,7 +182,7 @@ nav input:checked ~ #overlay{
     background-color: #e5e5e5;
     bottom: 0;
     left: 0;
-    height: 100vh;
+    /*height: 100vh;*/
     position: fixed;
     right: 0;
     top: 0;
@@ -172,19 +190,11 @@ nav input:checked ~ #overlay{
     z-index: -1;
 }
 
-/*
-#overlay{
-    
-    
-}*/
-
-/*-----List-----*/
-
 nav ul{
-    font-size: 1.5em;
+    font-size: 30px;
     list-style: none;
-    margin: 0;
-    max-height: 0;
+    margin: auto;
+    max-height: 10px;
     opacity: 0;
     overflow: hidden;
     padding: 0;
@@ -192,14 +202,14 @@ nav ul{
 }
 
 nav input:checked ~ ul{
-    margin: 1em;
+    margin: 16px;
     max-height: inherit;
     opacity: 1;
 }
 
 
 nav ul > li {
-    margin: 1em 0;
+    margin: 32px 0;
 }
 
 nav ul a {
@@ -216,11 +226,7 @@ nav ul a:hover{
 
 nav ul#social-media > li {
     display: inline-block;
-    font-size: 0.7em;
-    margin: 0.4em; 
+    font-size: 10px;
+    margin: 30px 7px; 
 }
 
-nav ul#social-media > li a:hover{
-    background-color: rgb(231, 231, 223);
-    color: white;
-}
